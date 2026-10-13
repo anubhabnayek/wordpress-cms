@@ -1,0 +1,358 @@
+/* ==========================================================
+   Doctor Detail Page
+========================================================== */
+
+.doctor-detail-page {
+    background: #f7fafa;
+    padding-bottom: 60px;
+}
+
+.doctor-detail-container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+
+/* ==========================================================
+   Hero
+========================================================== */
+
+.doctor-detail-hero {
+    background: #ffffff;
+    padding: 35px 0;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.doctor-detail-hero h1 {
+    margin: 15px 0 0;
+    font-size: 32px;
+    color: #24495c;
+}
+
+.doctor-breadcrumb {
+    display: flex;
+    gap: 10px;
+    font-size: 13px;
+    color: #777;
+}
+
+.doctor-breadcrumb a {
+    color: #16a6ae;
+    text-decoration: none;
+}
+
+
+/* ==========================================================
+   Layout
+========================================================== */
+
+.doctor-detail-layout {
+    display: grid;
+    grid-template-columns: 1fr 350px;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+
+/* ==========================================================
+   Card
+========================================================== */
+
+.doctor-detail-card {
+    background: #ffffff;
+    border: 1px solid #e7eeee;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.doctor-detail-card h3 {
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: #24495c;
+}
+
+
+/* ==========================================================
+   Doctor Header
+========================================================== */
+
+.doctor-profile {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 25px;
+}
+
+.doctor-detail-image img {
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.doctor-no-image {
+    width: 220px;
+    height: 220px;
+    background: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #777;
+}
+
+
+.doctor-detail-info h2 {
+    margin: 0 0 8px;
+    color: #24495c;
+    font-size: 28px;
+}
+
+.doctor-specialization {
+    color: #16a6ae;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.doctor-hospital {
+    color: #666;
+    font-size: 14px;
+}
+
+.doctor-location {
+    color: #666;
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   Rating
+========================================================== */
+
+.doctor-rating {
+    margin: 15px 0;
+}
+
+.stars {
+    color: #16a6ae;
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+
+/* ==========================================================
+   Meta
+========================================================== */
+
+.doctor-detail-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-top: 1px solid #eeeeee;
+    padding-top: 18px;
+    margin-top: 15px;
+}
+
+.doctor-detail-meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.doctor-detail-meta strong {
+    font-size: 12px;
+    color: #999;
+}
+
+.doctor-detail-meta span {
+    font-size: 14px;
+    color: #444;
+}
+
+
+/* ==========================================================
+   Information Grid
+========================================================== */
+
+.doctor-information-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.info-item {
+    border: 1px solid #eeeeee;
+    padding: 15px;
+}
+
+.info-item span {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    margin-bottom: 5px;
+}
+
+.info-item strong {
+    color: #444;
+    font-size: 14px;
+}
+
+
+/* ==========================================================
+   Appointment Form
+========================================================== */
+
+.doctor-detail-sidebar label {
+    display: block;
+    margin: 12px 0 6px;
+    font-size: 13px;
+    color: #555;
+}
+
+.doctor-detail-sidebar input,
+.doctor-detail-sidebar textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.doctor-detail-sidebar button {
+    width: 100%;
+    border: none;
+    background: #16a6ae;
+    color: #fff;
+    padding: 13px;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.doctor-detail-sidebar button:hover {
+    background: #128d95;
+}
+
+
+/* ==========================================================
+   Fee
+========================================================== */
+
+.fee-row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eeeeee;
+    padding: 12px 0;
+}
+
+.fee-row strong {
+    color: #16a6ae;
+}
+
+
+/* ==========================================================
+   Mobile
+========================================================== */
+
+@media (max-width: 768px) {
+
+    .doctor-detail-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .doctor-profile {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .doctor-detail-image img,
+    .doctor-no-image {
+        width: 100%;
+        height: 300px;
+    }
+
+    .doctor-detail-meta {
+        justify-content: center;
+    }
+
+    .doctor-information-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+.appointment-success {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 15px;
+
+    margin-bottom: 20px;
+    padding: 16px 18px;
+
+    background: #ecfdf3;
+    border: 1px solid #b7e4c7;
+    border-radius: 8px;
+
+    color: #166534;
+    box-sizing: border-box;
+}
+
+.appointment-success-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.appointment-success-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 28px;
+    height: 28px;
+
+    background: #22c55e;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 16px;
+    font-weight: 700;
+
+    flex-shrink: 0;
+}
+
+.appointment-success strong {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.appointment-success p {
+    margin: 0;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.appointment-success-close {
+    border: none;
+    background: transparent;
+
+    color: #166534;
+
+    font-size: 25px;
+    line-height: 20px;
+
+    cursor: pointer;
+
+    padding: 0;
+    margin: 0;
+}
+
+.appointment-success-close:hover {
+    opacity: 0.6;
+}
